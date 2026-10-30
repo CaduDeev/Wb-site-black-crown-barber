@@ -1,0 +1,12 @@
+{
+  "name": "black-crown-barber",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Modelo comercial isolado de site e agendamento para uma empresa por implantação.",
+  "engines": { "node": ">=22.13.0" },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.js",
+    "check": "node --check server.js && node --check app.js && node --check site-config.js && node --check test/system.test.js",
+    "test": "node --test"
+  }
+}
